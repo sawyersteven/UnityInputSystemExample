@@ -1,0 +1,123 @@
+{
+    "name": "Input",
+    "maps": [
+        {
+            "name": "Main",
+            "id": "13c255c0-0c29-4f40-a3f6-165b23e35f1f",
+            "actions": [
+                {
+                    "name": "OpenWheel",
+                    "type": "Button",
+                    "id": "fd90b2fa-b608-43ba-a344-c560bcc29273",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "0cf86990-59f7-4cac-8a8e-87f66c8b71a9",
+                    "path": "<Keyboard>/o",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "OpenWheel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Wheel",
+            "id": "44bb5bab-4795-42e0-a5ee-b52394f55177",
+            "actions": [
+                {
+                    "name": "CloseWheel",
+                    "type": "Button",
+                    "id": "53525806-3f3e-4928-b747-e8d4898b3367",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "SelectWheelSegment",
+                    "type": "Value",
+                    "id": "48ce4d0b-85be-45ff-ae3a-fa4cb93b35de",
+                    "expectedControlType": "Stick",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "5af03b8a-d2e2-4331-9a21-16ecfc055e2e",
+                    "path": "<Keyboard>/o",
+                    "interactions": "Press(behavior=1)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CloseWheel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "2a63da99-8574-419d-a786-efe3a6c1315c",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SelectWheelSegment",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "66e04a44-a374-454a-bb99-d44fd75c2a9e",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SelectWheelSegment",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "1167ca38-a148-4543-89cf-dc18f0201b42",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SelectWheelSegment",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "b08390ba-df2f-49a2-b07b-b948f61413dd",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SelectWheelSegment",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "9a61f2f6-16d1-4356-bdac-e54cbf57daae",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SelectWheelSegment",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
